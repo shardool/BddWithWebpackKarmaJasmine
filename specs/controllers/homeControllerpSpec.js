@@ -7,6 +7,7 @@ describe('My Project', function () {
         scope = $rootScope.$new();
     }));
     it('test1', function () {
+        /*this is what we would expect the book object on the scope to be*/
         var mockBook = {title: 'Programming in C', author: 'Dennis M Ritchie'};
         var ctrl = $controllerConstructor('homeController',{$scope:scope});
         expect(scope.book).toEqual(mockBook);
